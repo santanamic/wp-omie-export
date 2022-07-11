@@ -1,0 +1,202 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.about-wrap.full-width-layout {
+	max-width: none
+}
+
+.about-wrap {
+	overflow: hidden
+}
+
+.about-wrap .about-title {
+	margin-right: 0
+}
+
+.about-wrap .about-title sup {
+	background: #fff;
+	color: #666;
+	font-size: 33.333%;
+	font-weight: 700;
+	padding: 5px 10px;
+	white-space: nowrap
+}
+
+.about-wrap .about-intro {
+	font-size: 1.1em
+}
+
+.about-wrap img.about-logo {
+	height: 35px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.about-wrap h2.nav-tab-wrapper {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1em
+}
+
+.about-wrap h2.nav-tab-wrapper .nav-tab {
+	float: left;
+	font-weight: 400;
+	margin-bottom: 0
+}
+
+.about-wrap h2.nav-tab-wrapper .nav-tab.hidden {
+	display: none
+}
+
+.about-wrap h2.nav-tab-wrapper .nav-tab-active,
+.about-wrap h2.nav-tab-wrapper .nav-tab-active:hover {
+	border-bottom: 0
+}
+
+.about-wrap h2.nav-tab-wrapper .nav-tab-active {
+	position: relative
+}
+
+.about-wrap h2.nav-tab-wrapper .nav-tab-active:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	bottom: -1px;
+	height: 1px;
+	left: 0;
+	background: #f1f1f1
+}
+
+.about-wrap .panel {
+	border-bottom: none;
+	display: none;
+	float: left;
+	width: 100%
+}
+
+.about-wrap .panel:first-child {
+	display: block
+}
+
+.js .about-wrap .panel {
+	display: none
+}
+
+.about-wrap .wpc-blocks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between
+}
+
+.about-wrap .wpc-block {
+	margin-bottom: 20px;
+	width: 49%;
+	width: calc(50% - 10px)
+}
+
+.content-form {
+    text-align: left;
+    /* width: 300px; */
+    margin: auto;
+    /* background: #fff; */
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.content-form .button {
+    font-size: 16px;
+    margin-top: 20px;
+	float: left;
+}
+
+.disabled-input {
+    opacity: 0.6;
+    user-select: none;
+    pointer-events: none;
+}
+
+.content-block {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #ccc;
+    padding: 10px 5px 10px 10px;
+}
+
+.content-block * {
+    font-size: 15px;
+    padding-bottom: 5px;
+    line-height: 25px;
+}
+
+@-webkit-keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
+
+@keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg)
+	}
+}
+
+@media screen and (min-width:783px) {
+	.about-wrap h2.nav-tab-wrapper .nav-tab-active {
+		box-shadow: none
+	}
+}
+
+@media screen and (max-width:782px) {
+	.about-wrap h2.nav-tab-wrapper {
+		border: none;
+		padding: 0
+	}
+	.about-wrap h2.nav-tab-wrapper .nav-tab {
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+		margin: 0 0 1% 0;
+		padding: 2%;
+		width: 100%;
+		box-sizing: border-box
+	}
+	.about-wrap h2.nav-tab-wrapper .nav-tab-active,
+	.about-wrap h2.nav-tab-wrapper .nav-tab-active:hover {
+		background: #fff;
+		border-bottom: 1px solid #ccc
+	}
+	.about-wrap h2.nav-tab-wrapper .nav-tab-active:after,
+	.about-wrap h2.nav-tab-wrapper .nav-tab-active:hover:after {
+		display: none
+	}
+	.about-wrap .wpc-block {
+		width: 100%
+	}
+	.about-wrap #extensions>div:first-child,
+	.about-wrap #themes>div:first-child {
+		margin-top: 0!important
+	}
+	.about-wrap p.submit {
+		float: left;
+		margin-top: 1.25em;
+	}
+	.about-wrap .column-description .description {
+		max-height: none!important;
+		overflow: visible!important
+	}
+}
